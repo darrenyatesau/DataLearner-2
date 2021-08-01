@@ -1,0 +1,401 @@
+<!--
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/*
+ * DataLearner 2 - a data-mining app for Android
+ * strings.xml
+ * (C) Copyright Darren Yates 2018-2021
+ * Developed using a combination of Weka 3.8.5 and algorithms developed by Charles Sturt University
+-->
+<resources>
+    <string name="str_about">Version 2.0.0Beta\nCopyright Darren Yates,\nSupervisor: Md Zahidul Islam\n\nDeveloped as part of a research PhD at the School of Computing and Mathematics, Charles Sturt University, 2018-2021.
+        \n\nDataLearner is a data-mining app powered by the Weka open-source data-mining core and includes algorithms developed by Charles Sturt University.\n\nWeka was created by the University of Waikato.
+        \n\nDISCLAIMER: While this software has been tested, it is open-source and supplied AS-IS. No warranty is implied or given and no fitness for any particular application is to be inferred.\nYour use of this software implies you agree to these terms.</string>
+    <string name="str_select">Select</string>
+    <string name="app_name">DataLearner 2</string>
+    <string name="novalue">---</string>
+    <string name="tab">\u0009</string>
+    <string name="str_load">Load</string>
+    <string name="str_ready">Ready. [May scroll horizontally.]</string>
+    <string name="str_run">Run</string>
+    <string name="str_ok">OK, got it.</string>
+    <string name="str_view_det">View details / confusion matrix</string>
+    <string name="str_inc_class">Incorrectly Classified</string>
+    <string name="str_kappa">Kappa statistic</string>
+    <string name="str_mean_abs">Mean absolute error</string>
+    <string name="str_root_mean">Root mean square error</string>
+    <string name="str_rel_abs">Relative absolute error</string>
+    <string name="str_root_rel">Root relative squared error</string>
+    <string name="str_total_num">Total Number of Instances</string>
+    <string name="str_label_demo" translatable="false">Demo</string>
+    <string name="str_label_bayes" translatable="false">Bayes :</string>
+    <string name="str_label_functions">Functions :</string>
+    <string name="str_label_lazy">Lazy :</string>
+    <string name="str_label_meta" translatable="false">Meta :</string>
+    <string name="str_label_rules">Rules :</string>
+    <string name="str_label_trees">Trees :</string>
+    <string name="str_label_clust" translatable="false">Clusterers :</string>
+    <string name="str_label_assoc">Associators :</string>
+    <string name="str_tap_run">Tap \'Run\' to model your data:</string>
+    <string name="str_inc_ten">10-fold cross-validate</string>
+    <string name="str_cor_class">Correctly Classified</string>
+    <string name="str_sel_alg">&#8230; selected algorithm &#8230;</string>
+    <string name="str_sel_opt">Selected option:</string>
+    <string name="str_sel_cca">Select to classify / cluster / associate:</string>
+    <string name="str_label_load">Load a Weka-format file for learning:</string>
+    <string name="str_label_file">&#8230; Dataset File Summary &#8230;</string>
+    <string name="str_label_btn_load">Load ARFF or CSV file</string>
+    <string name="str_file_test">Data file to test:</string>
+    <string name="str_alt_att">Set alternate class attribute :</string>
+    <string name="str_changes">v2.0.0 - Initial release</string>
+    <string name="str_help">DataLearner works in three steps: \n1. Load a Weka-formatted ARFF file or a CSV file (header row, class attribute last in list and nominal) \n2. Swipe left and select an algorithm \n
+        3. Swipe left again and tap the Run button. Not every algorithm will work with every dataset, so you may get a no-result or something weird happen - just try another algorithm, or if you have a numeric class attribute, use the \'Force class attribute to Nominal\' button on the Load screen.
+        \n\n NOTE: Algorithms marked with * are able to model datasets with a numeric class attribute (Trees/REPTree, Functions/MultilayerPerceptron, Meta/Bagging)
+    </string>
+    <string name="intro_text">DataLearner 2 is data-mining app powered by the Weka data-mining core (version 3.8.4) and includes algorithms sourced from Weka and the Data Science Research Unit (DSRU) at Charles Sturt University.</string>
+    <string name="demo_text">DataLearner 2 is easy to learn, but if you\'re new to data mining, this is a good place to start.\n\n
+        A demo dataset called \'rain\' has just been loaded. It has six attributes - minTemp, maxTemp, windDirection, relHumidity, baroPressure and Rain.
+        It records 500 days of weather values, group or \'classed\' by how much rain there was that day - none less than 5mm, less than 20mm or greater than 20mn.\n
+        We now need to develop a set of rules or \'model\' that can predict whether it rained or not on a particular day based on those first five weather measurements for that day.\n\n
+        Here\'s what we do:\n
+        1. tap the \'Select\' tab and choose a classification algorithm from one of the six groups above the line (J48 is a good, fast option).\n
+        2. press the \'Run\' tab, tap the Run button and build a model using your chosen algorithm. DataLearner will then self-test the model using what\'s called \'ten-fold cross validation\' to see how accurate the model is.
+        The higher the \'correctly classified\' accuracy percentage, the better the model.\n
+        The worst accuracy score you can get is 56%, so try a couple of algorithms to see which gives good accuracy but doesn\'t take too long.\n
+        3. tap on the \'View Details \\ Confusion Matrix\' button to view the model (if available). Press the \'copy to clipboard\' button at the top to copy the data and paste it into a file editor or email.\n\n
+        Once you\'ve comfortable with DataLearner, try loading your own ARFF or CSV datasets (be warned though, your phone only has limited processing power, so do not try to load in a huge dataset and expect super-fast results).\n\n
+        Most of all, have fun - and welcome to the world of data-mining and machine-learning! :)
+    </string>
+    <string name="noconvert">Given the number of distinct values the selected class attribute has, converting this class attribute to nominal might not be the best thing. You can still choose to do so if you wish.
+    </string>
+    <string name="copy">You can now open up a text editor and paste the data onto a page.</string>
+    <string name="classerror">\n=== ERROR: Does the dataset have a numeric class attribute?\nTry \'Force class attribute to nominal\' button on Load screen.\nOtherwise, try Trees-REPTree or Meta-Bagging instead.\nReady.</string>
+    <string-array name="arrayBayes">
+        <item>-- none selected --</item>
+        <item>BayesNet</item>
+        <item>NaiveBayes</item>
+    </string-array>
+    <string-array name="arrayRules">
+        <item>-- none selected --</item>
+        <item>Conjunctive Rule</item>
+        <item>Decision Table</item>
+        <item>DTNB</item>
+        <item>JRip</item>
+        <item>OneR</item>
+        <item>PART</item>
+        <item>Ridor</item>
+        <item>ZeroR</item>
+    </string-array>
+    <string-array name="arrayTrees">
+        <item>-- none selected --</item>
+        <item>ADTree</item>
+        <item>BFTree</item>
+        <item>DecisionStump</item>
+        <item>FastForest</item>
+        <item>ForestPA</item>
+        <item>HoeffdingTree</item>
+        <item>J48 (C4.5)</item>
+        <item>LADTree</item>
+        <item>RandomForest</item>
+        <item>RandomTree</item>
+        <item>*REPTree</item>
+        <item>SimpleCART</item>
+        <item>SPAARC</item>
+        <item>SysFor</item>
+    </string-array>
+    <string-array name="arrayMeta">
+        <item>-- none selected --</item>
+        <item>AdaBoostM1</item>
+        <item>*Bagging</item>
+        <item>LogitBoost</item>
+        <item>MultiBoostAB</item>
+        <item>Random Committee</item>
+        <item>RandomSubSpace</item>
+        <item>Rotation Forest</item>
+    </string-array>
+    <string-array name="arrayLazy">
+        <item>-- none selected --</item>
+        <item>IBk (KNN)</item>
+        <item>KStar</item>
+    </string-array>
+    <string-array name="arrayFunctions">
+        <item>-- none selected --</item>
+        <item>Logistic</item>
+        <item>SimpleLogistic</item>
+        <item>*MultilayerPerceptron</item>
+    </string-array>
+    <string-array name="arrayCluster">
+        <item>-- none selected --</item>
+        <item>DBSCAN</item>
+        <item>EM</item>
+        <item>FarthestFirst</item>
+        <item>FilteredClusterer</item>
+        <item>SimpleKMeans</item>
+    </string-array>
+    <string-array name="arrayAssociate">
+        <item>-- none selected --</item>
+        <item>Apriori</item>
+        <item>FilteredAssociator</item>
+        <item>FPGrowth</item>
+    </string-array>
+    <string-array name="arrayNumbers">
+        <item> --- </item>
+    </string-array>
+    <string-array name="classType">
+        <item>categorical</item>
+        <item>numeric</item>
+    </string-array>
+    <string-array name="trueFalse">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+
+    <!-- ################################################################################################ -->
+
+    <string-array name="BayesNet">
+        <item>useADTree,tf,false,-D,rev</item>
+        <item>searchAlgorithm,edit,weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES,-Q,norm</item>
+        <item>estimator,edit,weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5,-E,norm</item>
+    </string-array>
+    <string-array name="NaiveBayes">
+        <item>useKernelEst.,tf,false,-K,norm</item>
+        <item>useSupervisedDiscre.,tf,false,-D,norm</item>
+    </string-array>
+    <string-array name="Logistic">
+        <item>maxIterations,edit,-1,-M,norm</item>
+        <item>ridgeValue,edit,1.0E-8,-R,norm</item>
+    </string-array>
+    <string-array name="SimpleLogistic">
+        <item>errorOnProb,tf,false,-P,norm</item>
+        <item>heuristicStop,edit,50,-H,norm</item>
+        <item>naxBoostingIters.,edit,500,-M,norm</item>
+        <item>numBoostingIters.,edit,0,-I,norm</item>
+        <item>useAIC,tf,false,-A,norm</item>
+        <item>useCrossValid.,tf,true,-S,rev</item>
+        <item>weightTrimBeta,edit,0.0,-W,norm</item>
+    </string-array>
+    <string-array name="MultilayerPerceptron">
+        <item>decay,tf,false,-D,norm</item>
+        <item>hiddenLayers,edit,a,-H,norm</item>
+        <item>learningRate,edit,0.3,-L,norm</item>
+        <item>momentum,edit,0.2,-M,norm</item>
+        <item>nomToBinFilter,tf,true,-B,rev</item>
+        <item>normaliseAttrs,tf,true,-I,rev</item>
+        <item>normaliseNumClass,tf,true,-C,rev</item>
+        <item>reset,tf,true,-R,rev</item>
+        <item>seed,edit,0,-S,norm</item>
+        <item>trainingTime,edit,500,-N,norm</item>
+        <item>validationSetSize,edit,0,-V,norm</item>
+        <item>validationThresh.,edit,20,-E,norm</item>
+    </string-array>
+    <string-array name="IBk">
+        <item>KNN,edit,1,-K,norm</item>
+        <item>crossValidate,tf,false,-X,norm</item>
+        <item>meanSquared,tf,false,-E,norm</item>
+        <item>windowSize,edit,0,-W,norm</item>
+    </string-array>
+    <string-array name="KStar">
+        <item>entropicAutoBlend,tf,false,-E,norm</item>
+        <item>globalBlend,edit,20,-M a -B,norm</item>
+    </string-array>
+    <string-array name="AdaBoostM1">
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>useResampling,tf,false,-Q,norm</item>
+        <item>weightThresh.,edit,100,-P,norm</item>
+    </string-array>
+    <string-array name="Bagging">
+        <item>bagSizePercent,edit,100,-P,norm</item>
+        <item>calcOutOfBag,tf,false,-O,norm</item>
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="LogitBoost">
+        <item>numThreads,edit,1,-E,norm</item>
+        <item>likelihoodThresh.,edit,-1.79769313E308,-L,norm</item>
+        <item>numFolds,edit,0,-F,norm</item>
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>numRuns,edit,1,-R,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>shrinkage,edit,1.0,-H,norm</item>
+        <item>useResampling,tf,false,-Q,norm</item>
+        <item>weightThresh.,edit,100,-P,norm</item>
+    </string-array>
+    <string-array name="MultiBoostAB">
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>numSubCmtys,edit,3,-C,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>useResampling,tf,false,-Q,norm</item>
+        <item>weightThresh.,edit,100,-P,norm</item>
+    </string-array>
+    <string-array name="RandomCommittee">
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="RandomSubSpace">
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>subSpaceSize,edit,0.5,-P,norm</item>
+    </string-array>
+    <string-array name="RotationForest">
+        <item>maxGroup,edit,3,-H,norm</item>
+        <item>minGroup,edit,3,-G,norm</item>
+        <item>numIterations,edit,10,-I,norm</item>
+        <item>numberOfGroups,tf,false,-N,norm</item>
+        <item>removedPercent,edit,50,-P,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="ConjunctiveRule">
+        <item>exclusive,tf,false,-E,norm</item>
+        <item>folds,edit,3,-N,norm</item>
+        <item>minNo,edit,2.0,-M,norm</item>
+        <item>numAntds,edit,-1,-P,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="DecisionTable">
+        <item>crossVal,edit,1,-X,norm</item>
+        <item>useIBk,tf,false,-I,norm</item>
+    </string-array>
+    <string-array name="DTNB">
+        <item>crossVal,edit,1,-X,norm</item>
+        <item>useIBk,tf,false,-I,norm</item>
+    </string-array>
+    <string-array name="JRip">
+        <item>checkErrorRate,tf,true,-E,rev</item>
+        <item>folds,edit,3,-F,norm</item>
+        <item>minNo,edit,2.0,-N,norm</item>
+        <item>optimisations,edit,2,-O,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>usePruning,tf,true,-P,rev</item>
+    </string-array>
+    <string-array name="OneR">
+        <item>minBucketSize,edit,6,-B,norm</item>
+    </string-array>
+    <string-array name="PART">
+        <item>binarySplits,tf,false,-B,norm</item>
+        <item>confidenceFactor,edit,0.25,-C,norm</item>
+        <item>minNumObj,edit,2,-M,norm</item>
+        <item>numFolds,edit,,-N,norm</item>
+        <item>reducedErrPruning,tf,false,-R,norm</item>
+        <item>seed,edit,1,-Q,norm</item>
+        <item>unpruned,tf,false,-U,norm</item>
+    </string-array>
+    <string-array name="Ridor">
+        <item>folds,edit,3,-F,norm</item>
+        <item>majorityClass,tf,false,-M,norm</item>
+        <item>minNo,edit,2.0,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>shuffle,edit,1,-S,norm</item>
+        <item>wholeDataErr,tf,false,-A,norm</item>
+    </string-array>
+    <string-array name="ZeroR">
+    </string-array>
+    <string-array name="ADTree">
+        <item>numBoostingIters,edit,10,-B,norm</item>
+    </string-array>
+    <string-array name="BFTree">
+        <item>heuristic,tf,true,-H,rev</item>
+        <item>minNumObj,edit,2,-M,norm</item>
+        <item>numFoldsPrun,edit,5,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>useErrRate,tf,true,-R,rev</item>
+        <item>useGini,tf,true,-G,rev</item>
+        <item>useOneSE,tf,false,-A,norm</item>
+    </string-array>
+    <string-array name="DecisionStump">
+    </string-array>
+    <string-array name="ForestPA">
+        <item>numTrees,edit,10,-T,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>simpleCartMinRecs,edit,2,-M,norm</item>
+        <item>simpleCartPrunFolds,edit,2,-N,norm</item>
+    </string-array>
+    <string-array name="HoeffdingTree">
+        <item>splitCrit (0=Gini*1=IG),edit,1,-S,norm</item>
+        <item>GracePeriod,edit,200,-G,norm</item>
+        <item>TieThreshold,edit,0.05,-H,norm</item>
+    </string-array>
+    <string-array name="J48">
+        <item>BinarySplits,tf,false,-B,norm</item>
+        <item>confidenceFactor,edit,0.25,-C,norm</item>
+        <item>minNumberObjects,edit,2,-M,norm</item>
+        <item>numberOfFolds,edit,,-N,norm</item>
+        <item>reducedErrorPrune,tf,false,-R,norm</item>
+        <item>seed,edit,1,-Q,norm</item>
+        <item>unpruned,tf,false,-U,norm</item>
+        <item>useLaplace,tf,false,-A,norm</item>
+    </string-array>
+    <string-array name="LADTree">
+        <item>numBoostIters,edit,10,-B,norm</item>
+    </string-array>
+    <string-array name="FastForest">
+        <item>num-slots (CPU cores),edit,1,-num-slots,norm</item>
+        <item>maxDepth,edit,0,-depth,norm</item>
+        <item>numFeatures,edit,0,-K,norm</item>
+        <item>numTrees,edit,100,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="RandomForest">
+        <item>num-slots (CPU cores),edit,1,-num-slots,norm</item>
+        <item>maxDepth,edit,0,-depth,norm</item>
+        <item>numFeatures,edit,0,-K,norm</item>
+        <item>numTrees,edit,100,-I,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="RandomTree">
+        <item>KValue,edit,0,-K,norm</item>
+        <item>maxDepth,edit,0,-depth,norm</item>
+        <item>minNum,edit,1.0,-M,norm</item>
+        <item>numFolds,edit,0,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="REPTree">
+        <item>maxDepth,edit,-1,-L,norm</item>
+        <item>minNum,edit,2,-M,norm</item>
+        <item>minVarianceProp,edit,0.001,-V,norm</item>
+        <item>noPrune,tf,false,-P,norm</item>
+        <item>numFolds,edit,3,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+    </string-array>
+    <string-array name="SimpleCART">
+        <item>heuristic,tf,true,-H,rev</item>
+        <item>minNumObj,edit,2.0,-M,norm</item>
+        <item>numFoldsPrune,edit,5,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>useOneSE,tf,false,-A,norm</item>
+        <item>usePrune,tf,true,-U,rev</item>
+    </string-array>
+    <string-array name="SysFor">
+        <item>batchSize,edit,100,-batch-size,norm</item>
+        <item>confidence,edit,0.25,-C,norm</item>
+        <item>goodness,edit,0.3,-G,norm</item>
+        <item>minRecLeaf,edit,10,-L,norm</item>
+        <item>numDecPlaces,edit,2,-num-decimal-places,norm</item>
+        <item>numTrees,edit,60,-N,norm</item>
+        <item>separation,edit,0.3,-S,norm</item>
+    </string-array>
+    <string-array name="SPAARC">
+        <item>minNumObj,edit,2,-M,norm</item>
+        <item>numFoldsPrune,edit,5,-N,norm</item>
+        <item>seed,edit,1,-S,norm</item>
+        <item>useOneSE,tf,false,-A,norm</item>
+        <item>usePrune,tf,True,-U,rev</item>
+    </string-array>
+    <string-array name="spinnerEmpty">
+        <item>---</item>
+    </string-array>
+
+
+
+</resources>

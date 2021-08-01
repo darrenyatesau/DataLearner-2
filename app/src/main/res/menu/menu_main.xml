@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="au.com.darrenyates.datalearner2.MainActivity">
+    <item
+        android:id="@+id/clear"
+        android:orderInCategory="100"
+        android:title="Clear status area"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/yt_help"
+        android:orderInCategory="100"
+        android:title="Help video on YouTube"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/changelog"
+        android:orderInCategory="100"
+        android:title="Changelog"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About DataLearner 2"
+        app:showAsAction="never" />
+
+</menu>
