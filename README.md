@@ -6,7 +6,7 @@ DataLearner 2 is the second release of an open-source easy-to-use tool for data 
 * DataWalker AR data viewer - use your ARCore-ready phone to walk through your training dataset using augmented reality.
 * multi-core CPU support for faster modelling.
 * distributed data-mining using multiple Android devices over a closed-network (experimental).
-* Models are now Weka 3.8-compatible - learn on Android, test on Weka.
+* Models can be saved to local storage and are now Weka 3.8-compatible - eg. learn on Android, test on Weka (or just do the lot on Android :).
 * Meta-parameter setting for all machine-learning algorithms. 
 
 DataLearner 2 features classification, association and clustering algorithms from the open-source Weka (Waikato Environment for Knowledge Analysis) package, plus new algorithms developed by the Data Science Research Unit (DSRU) at Charles Sturt University. Combined, the app provides over 40 machine-learning/data-mining algorithms, including RandomForest, C4.5 (J48) and NaiveBayes.
