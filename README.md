@@ -12,7 +12,7 @@ DataLearner 2 is the second release of an open-source easy-to-use tool for data 
 DataLearner 2 features classification, association and clustering algorithms from the open-source Weka (Waikato Environment for Knowledge Analysis) package, plus new algorithms developed by the Data Science Research Unit (DSRU) at Charles Sturt University. Combined, the app provides over 40 machine-learning/data-mining algorithms, including RandomForest, C4.5 (J48) and NaiveBayes.
 
 <H3>CSV file support</H3>
-To use CSV files in DataLearner 2, the file MUST include the following: 1. header row 2. class attribute must be the last column in the CSV table 3. class attribute will be forced to 'nominal' - that means the class values will be considered 'categorical' or 'nominal'. (points 2 and 3 may change once we're sure that it works reliably).
+To use CSV files in DataLearner 2, the file MUST include a header row.
 
 <H3>Privacy Policy</H3>
 DataLearner 2's privacy policy is pretty simple:
