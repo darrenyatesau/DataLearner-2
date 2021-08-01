@@ -11,9 +11,8 @@ DataLearner 2 is the second release of an open-source easy-to-use tool for data 
 
 DataLearner 2 features classification, association and clustering algorithms from the open-source Weka (Waikato Environment for Knowledge Analysis) package, plus new algorithms developed by the Data Science Research Unit (DSRU) at Charles Sturt University. Combined, the app provides over 40 machine-learning/data-mining algorithms, including RandomForest, C4.5 (J48) and NaiveBayes.
 
-DataLearner 2 collects no information – it requires access to your device storage simply to load your datasets and save your machine-learning models.
-
-DISCLAIMER: While this software has been tested, it is open-source and supplied AS-IS. No warranty is implied or given and no fitness for any particular application is to be inferred. Your use of this software implies you agree to these terms.
+<H3>CSV file support</H3>
+To use CSV files in DataLearner 2, the file MUST include the following: 1. header row 2. class attribute must be the last column in the CSV table 3. class attribute will be forced to 'nominal' - that means the class values will be considered 'categorical' or 'nominal'. (points 2 and 3 may change once we're sure that it works reliably).
 
 <H3>Privacy Policy</H3>
 DataLearner 2's privacy policy is pretty simple:
@@ -31,6 +30,8 @@ DataLearner 2 requires a number of permissions in order to perform its tasks. Th
 <H3>Where DataLearner is being used</H3>
 
 DataLearner was designed as a research project for my PhD during 2018-2021 to see just how far we could push smartphone technology in providing self-contained data mining/machine-learning without relying on external server/network-based hardware. DataLearner is being used as a teaching tool in the ITC573 Data and Knowledge Engineering subject for the Master of Information Technology post-graduate degree at Charles Sturt University. It was also presented at ADMA 2019 (15th International Conference on Advanced Data Mining and Applications) and published in 'Lecture Notes in Artificial Intelligence' (Springer).
+
+DISCLAIMER: While this software has been tested, it is open-source and supplied AS-IS. No warranty is implied or given and no fitness for any particular application is to be inferred. Your use of this software implies you agree to these terms.
 
 Cheers,
 Darren.
