@@ -5,7 +5,7 @@ DataLearner 2 is the second release of an open-source easy-to-use tool for data 
 --- NEW FEATURES ---
 * DataWalker AR data viewer - use your ARCore-ready phone to walk through your training dataset using augmented reality.
 * multi-core CPU support for faster modelling.
-* distributed data-mining using multiple Android devices over a closed-network (experimental).
+* distributed data-mining using multiple Android devices over a closed-network (experimental, NOTE: data transfer does NOT include any encryption, so use generic data only).
 * Models can be saved to local storage and are now Weka 3.8-compatible - eg. learn on Android, test on Weka (or just do the lot on Android :).
 * Meta-parameter setting for all machine-learning algorithms. 
 
