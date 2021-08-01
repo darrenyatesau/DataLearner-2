@@ -18,7 +18,7 @@ To use CSV files in DataLearner 2, the file MUST include a header row.
 DataLearner 2's privacy policy is pretty simple:
 <br>1. DataLearner does not collect any user data. It models data in the training datasets you provide in ARFF or CSV files (otherwise, it doesn't do anything).
 <br>2. DataLearner does not save any usage data, including any data regarding any training dataset you load for data-mining. Any training data remaining in RAM after use can be erased by just rebooting your phone. DataLearner 2 does allow you to save models that represent your data as Weka-compatible .model files - what you do with them after that is up to you.
-<br>(Google Play collects general app download and usage analytics about DataLearner 2, which we use to correct bugs and issues, but this is no different to any other app on Google Play. We have no control over this.)
+<br>(PLEASE NOTE: Google Play collects general app download and usage analytics about DataLearner 2, which we use to correct bugs and issues, but this is no different to any other app on Google Play. We have no control over this.)
 <br>By installing and using the app, you agree to this policy. Cheers!
 
 <H3>Android Permissions</H3>
