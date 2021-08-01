@@ -29,4 +29,8 @@ DataLearner 2 requires a number of permissions in order to perform its tasks. Th
 <br>* STORAGE - For DataLearner 2 to access and build models from your training data, as well as be able to save those models, it needs access to your device storage. Again, without storage access, why are we even here?
 
 <H3>Where DataLearner is being used</H3>
+
 DataLearner was designed as a research project for my PhD during 2018-2021 to see just how far we could push smartphone technology in providing self-contained data mining/machine-learning without relying on external server/network-based hardware. DataLearner is being used as a teaching tool in the ITC573 Data and Knowledge Engineering subject for the Master of Information Technology post-graduate degree at Charles Sturt University. It was also presented at ADMA 2019 (15th International Conference on Advanced Data Mining and Applications) and published in 'Lecture Notes in Artificial Intelligence' (Springer).
+
+Cheers,
+Darren.
